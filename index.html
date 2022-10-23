@@ -9,8 +9,12 @@
 		<title>ggong00 포트폴리오</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/swiper.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/project.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -79,27 +83,25 @@
 									</div>
 								</div>
 
-								<div class="group-2">	
-									<div class="skill-card">
-										<div class="header">Version Control</div>
-										<div class="main">
-											<img class="skill-img" src="images/logo/git2.png">
-											<img class="skill-img" src="images/logo/GitHub2.png">
-										</div>
-										<div class="footer">
-											Git | Github
-										</div>
+								<div class="skill-card">
+									<div class="header">Version Control</div>
+									<div class="main">
+										<img class="skill-img" src="images/logo/git2.png">
+										<img class="skill-img" src="images/logo/GitHub2.png">
 									</div>
+									<div class="footer">
+										Git | Github
+									</div>
+								</div>
 
-									<div class="skill-card">
-										<div class="header">Test</div>
-										<div class="main">
-											<img class="skill-img" src="images/logo/junit.png">
-											<img class="skill-img" src="images/logo/postman.png">
-										</div>
-										<div class="footer">
-											Junit5 | Postman
-										</div>
+								<div class="skill-card">
+									<div class="header">Test</div>
+									<div class="main">
+										<img class="skill-img" src="images/logo/junit.png">
+										<img class="skill-img" src="images/logo/postman.png">
+									</div>
+									<div class="footer">
+										Junit5 | Postman
 									</div>
 								</div>
 
@@ -131,14 +133,55 @@
 						<!-- Project -->
 							<article id="Project">
 								<h2 class="major">Project</h2>
-								<div class="bold">Heal-lo</div>
-								<ul>
-									<li><a href="outputs/Heal-lo문서/1팀 발표.pdf">프로젝트 PDF</a></li>
-									<li><a href="https://github.com/k-juyeong/Heal-lo_server">소스코드</a></li>
-									<li><a href="https://www.youtube.com/watch?v=6_Xtt0H85qE">시연영상</a></li>
-							</ul>
+
+								<div class="project-card" id="heal-lo">
+									<div class="card-top">
+										<div class="title bold">Heal-lo</div>
+										<img src="/images/heal_lo/메인화면1.png" alt="썸네일" class="project-preview">
+										<h5 class="more-info">자세히 보기</h5>
+									</div>		
+									<div class="card-body active">
+										<p class="append-buttons">
+											<span class="slide-link">목적/목표</span>
+											<span class="slide-link">기능정의서</span>
+											<span class="slide-link">프로세스</span>
+											<span class="slide-link">소요기술</span>
+											<span class="slide-link">데이터베이스</a>
+										</p>
+										<!-- Swiper -->
+										<div class="swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide s-1">
+													<img src="/images/heal_lo/목적_목표.png" alt="">
+												</div>
+												<div class="swiper-slide s-2">
+													<img src="/images/heal_lo/기능정의서.png" alt="" style="width: 85%;">
+												</div>
+												<div class="swiper-slide s-3">
+													<img src="/images/heal_lo/프로세스분할도.png" alt="">
+												</div>
+												<div class="swiper-slide s-4">
+													<img src="/images/heal_lo/소요기술.png" alt="" style="width: 60%;">
+												</div>
+												<div class="swiper-slide s-5">
+													<img src="/images/heal_lo/DB구조.png" alt="" style="width: 90%;">
+												</div>
+											</div>
+											<div class="swiper-button-next"></div>
+											<div class="swiper-button-prev"></div>
+										</div>	
+										<div class="link-menu">
+											<div class="link"><a href="outputs/Heal-lo문서/1팀 발표.pdf">프로젝트 PDF</a></div>
+											<div class="link"><a href="https://github.com/k-juyeong/Heal-lo_server">소스코드</a></div>
+											<div class="link"><a href="https://www.youtube.com/watch?v=6_Xtt0H85qE">시연영상</a></div>
+										</div>
+									</div>		
+								</div>
+								<hr>
 
 							</article>	
+
+		
 
 						<!-- Contact -->
 							<article id="contact">
@@ -415,6 +458,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/myswiper.js"></script>
 
 	</body>
 </html>
